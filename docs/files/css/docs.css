@@ -45,13 +45,19 @@ body{
 	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
-
-.sample-docs .hard{
-	background-image:url(../pics/covers.jpg);
+.sample-docs .hard {
+    background-image: url(../pics/covers.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
 .sample-docs .p2{
-	background-position:-471px 0;
+	background-image: url(../pics/paragraph.png);
+}
+.sample-docs .p20{
+	background-image: url(../pics/final.png);
 }
 
 
@@ -64,11 +70,11 @@ body{
 	background-image:linear-gradient(left, #fff 95%, #dadada 100%);
 }
 
-.sample-docs .p29{
+.sample-docs .p22{
 	background-position:-942px 0;
 }
 
-.sample-docs .p30{
+.sample-docs .p23{
 	background-position:-1413px 0;
 }
 
@@ -80,6 +86,16 @@ body{
 
 .sample-docs .odd.p10 .gradient,
 .sample-docs .odd.p11 .gradient {
+    display: none; /* Hide the border gradient on odd pages 8 and 9 */
+}
+
+.sample-docs .even.p2 .gradient,
+.sample-docs .even.p3 .gradient {
+    display: none; /* Hide the border gradient on even pages 8 and 9 */
+}
+
+.sample-docs .odd.p2 .gradient,
+.sample-docs .odd.p3 .gradient {
     display: none; /* Hide the border gradient on odd pages 8 and 9 */
 }
 
